@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.imgur.com/zW1D04X.png" sizes="16x16" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Quiz-Español.css">
+  <title>Quiz - Español</title>
+</head>
+<body>
+
+<div id="quiz">
+    <h1>Bienvenido al Quiz de Español</h1>
+    <p class="instructions"> Instrucciones: Por favor, lea cada pregunta cuidadosamente y seleccione la respuesta que considere correcta. Al finalizar, haga clic en el botón "Enviar" para ver sus resultados.</p>
+  <div id="p0">
+    <h3>1) ¿Cuál es el sinónimo de la palabra "benevolente"?</h3>
+    <label><input type="radio" name="p0" value="1" onclick="respuesta(0, this)"> Malicioso.</label>
+    <label><input type="radio" name="p0" value="2" onclick="respuesta(0, this)"> Bondadoso.</label>
+    <label><input type="radio" name="p0" value="3" onclick="respuesta(0, this)"> Despiadado.</label>
+  </div>
+  
+  <div id="p1">
+    <h3>2) ¿Cuál es la función principal de una conclusión en un texto?</h3>
+    <label><input type="radio" name="p1" value="1" onclick="respuesta(1, this)"> Introducir nuevos argumentos.</label>
+    <label><input type="radio" name="p1" value="2" onclick="respuesta(1, this)"> Resumir y cerrar las ideas principales.</label>
+    <label><input type="radio" name="p1" value="3" onclick="respuesta(1, this)"> Presentar datos estadísticos.</label>
+  </div>
+
+  <div id="p2">
+    <h3>3) ¿Qué figura literaria se utiliza en la frase "El viento susurraba entre los árboles"?</h3>
+    <label><input type="radio" name="p2" value="1" onclick="respuesta(2, this)"> Metáfora.</label>
+    <label><input type="radio" name="p2" value="2" onclick="respuesta(2, this)"> Hipérbole.</label>
+    <label><input type="radio" name="p2" value="3" onclick="respuesta(2, this)"> Personificación.</label>
+  </div>
+
+  <div id="p3">
+    <h3>4) ¿Cuál de las siguientes opciones es un adverbio? </h3>
+    <label><input type="radio" name="p3" value="1" onclick="respuesta(3, this)"> Alegre.</label>
+    <label><input type="radio" name="p3" value="2" onclick="respuesta(3, this)"> Lentamente.</label>
+    <label><input type="radio" name="p3" value="3" onclick="respuesta(3, this)"> Alto</label>
+  </div>
+
+  <div id="p4">
+    <h3>5) ¿Qué tipo de oración es "Aunque estaba cansado, terminó su trabajo"?</h3>
+    <label><input type="radio" name="p4" value="1" onclick="respuesta(4, this)"> Simple.</label>
+    <label><input type="radio" name="p4" value="2" onclick="respuesta(4, this)"> Compuesta coordinada.</label>
+    <label><input type="radio" name="p4" value="3" onclick="respuesta(4, this)"> Compuesta subordinada.</label>
+
+    <button onclick="corregir()">Enviar</button>
+    <p id="resultado"></p>
+  </div>
+</div>
+
+<script src="SCRIPT-ESPAÑOL.js"></script>
+
+</body>
+</html>

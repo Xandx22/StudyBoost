@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.imgur.com/RooA74S.png" sizes="16x16" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Quiz-HistoriaUni.css">
+  <title>Quiz - Historia Universal</title>
+</head>
+<body>
+
+<div id="quiz">
+    <h1>Bienvenido al Quiz de Historia Universal</h1>
+    <p class="instructions"> Instrucciones: Por favor, lea cada pregunta cuidadosamente y seleccione la respuesta que considere correcta. Al finalizar, haga clic en el botón "Enviar" para ver sus resultados.</p>
+  <div id="p0">
+    <h3>1) ¿Cuál fue el principal objetivo de las Cruzadas durante la Edad Media?</h3>
+    <label><input type="radio" name="p0" value="1" onclick="respuesta(0, this)"> Conquistar territorios en América.</label>
+    <label><input type="radio" name="p0" value="2" onclick="respuesta(0, this)"> Reconquistar Tierra Santa de los musulmanes.</label>
+    <label><input type="radio" name="p0" value="3" onclick="respuesta(0, this)"> Establecer rutas comerciales con Asia.</label>
+  </div>
+  
+  <div id="p1">
+    <h3>2) ¿Quién fue el líder de la Revolución Rusa de 1917?</h3>
+    <label><input type="radio" name="p1" value="1" onclick="respuesta(1, this)"> Joseph Stalin.</label>
+    <label><input type="radio" name="p1" value="2" onclick="respuesta(1, this)"> Vladimir Lenin.</label>
+    <label><input type="radio" name="p1" value="3" onclick="respuesta(1, this)"> León Trotsky.</label>
+  </div>
+
+  <div id="p2">
+    <h3>3) ¿Qué acontecimiento marca el inicio de la Edad Moderna?</h3>
+    <label><input type="radio" name="p2" value="1" onclick="respuesta(2, this)"> La caída del Imperio Romano.</label>
+    <label><input type="radio" name="p2" value="2" onclick="respuesta(2, this)"> El descubrimiento de América.</label>
+    <label><input type="radio" name="p2" value="3" onclick="respuesta(2, this)"> La Revolución Francesa.</label>
+  </div>
+
+  <div id="p3">
+    <h3>4) ¿Cuál fue la causa principal de la Primera Guerra Mundial?</h3>
+    <label><input type="radio" name="p3" value="1" onclick="respuesta(3, this)"> La invasión de Polonia por Alemania.</label>
+    <label><input type="radio" name="p3" value="2" onclick="respuesta(3, this)"> El asesinato del archiduque Francisco Fernando.</label>
+    <label><input type="radio" name="p3" value="3" onclick="respuesta(3, this)"> La crisis de los misiles en Cuba.</label>
+  </div>
+
+  <div id="p4">
+    <h3>5) ¿Qué filósofo griego es conocido como el "Padre de la Filosofía Occidental"?</h3>
+    <label><input type="radio" name="p4" value="1" onclick="respuesta(4, this)"> Aristóteles.</label>
+    <label><input type="radio" name="p4" value="2" onclick="respuesta(4, this)"> Sócrates.</label>
+    <label><input type="radio" name="p4" value="3" onclick="respuesta(4, this)"> Platón.</label>
+
+    <button onclick="corregir()">Enviar</button>
+    <p id="resultado"></p>
+  </div>
+</div>
+
+<script src="SCRIPT-HISTORIAUNI.js"></script>
+
+</body>
+</html>

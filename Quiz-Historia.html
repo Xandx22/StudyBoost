@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.imgur.com/D05UESB.png" sizes="16x16" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Quiz-Historia.css">
+  <title>Quiz - Historia de Mex</title>
+</head>
+<body>
+
+<div id="quiz">
+    <h1>Bienvenido al Quiz de Historia de México</h1>
+    <p class="instructions"> Instrucciones: Por favor, lea cada pregunta cuidadosamente y seleccione la respuesta que considere correcta. Al finalizar, haga clic en el botón "Enviar" para ver sus resultados.</p>
+  <div id="p0">
+    <h3>1) ¿Quién fue el primer emperador del Imperio Mexicano después de la independencia?</h3>
+    <label><input type="radio" name="p0" value="1" onclick="respuesta(0, this)"> Agustín de Iturbide.</label>
+    <label><input type="radio" name="p0" value="2" onclick="respuesta(0, this)"> Maximiliano de Habsburgo.</label>
+    <label><input type="radio" name="p0" value="3" onclick="respuesta(0, this)"> Porfirio Díaz.</label>
+  </div>
+  
+  <div id="p1">
+    <h3>2) ¿En qué año se promulgó la Constitución de México actualmente vigente?</h3>
+    <label><input type="radio" name="p1" value="1" onclick="respuesta(1, this)"> 1824.</label>
+    <label><input type="radio" name="p1" value="2" onclick="respuesta(1, this)"> 1857.</label>
+    <label><input type="radio" name="p1" value="3" onclick="respuesta(1, this)"> 1917.</label>
+  </div>
+
+  <div id="p2">
+    <h3>3) ¿Cuál fue la principal causa de la Revolución Mexicana iniciada en 1910?</h3>
+    <label><input type="radio" name="p2" value="1" onclick="respuesta(2, this)"> La invasión francesa.</label>
+    <label><input type="radio" name="p2" value="2" onclick="respuesta(2, this)"> La dictudura de Porfirio Díaz.</label>
+    <label><input type="radio" name="p2" value="3" onclick="respuesta(2, this)"> La independencia de México.</label>
+  </div>
+
+  <div id="p3">
+    <h3>4) ¿Qué presidente mexicano expropió la industria petrolera en 1938?</h3>
+    <label><input type="radio" name="p3" value="1" onclick="respuesta(3, this)"> a) Venustiano Carranza.</label>
+    <label><input type="radio" name="p3" value="2" onclick="respuesta(3, this)"> Álvaro Obregón.</label>
+    <label><input type="radio" name="p3" value="3" onclick="respuesta(3, this)"> Lázaro Cárdenas.</label>
+  </div>
+
+  <div id="p4">
+    <h3>5) ¿Qué civilización construyó la ciudad de Tenochtitlán?</h3>
+    <label><input type="radio" name="p4" value="1" onclick="respuesta(4, this)"> Los mayas.</label>
+    <label><input type="radio" name="p4" value="2" onclick="respuesta(4, this)"> Los aztecas.</label>
+    <label><input type="radio" name="p4" value="3" onclick="respuesta(4, this)"> Los olmecas.</label>
+
+    <button onclick="corregir()">Enviar</button>
+    <p id="resultado"></p>
+  </div>
+</div>
+<script src="SCRIP-HISTORIA-MEX.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.imgur.com/U6kGYYt.png" sizes="16x16" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Quiz-Geografia.css">
+  <title>Quiz - Geografía</title>
+</head>
+<body>
+
+<div id="quiz">
+  <h1>Bienvenido al Quiz de Geografía</h1>
+  <p class="instructions">Instrucciones: Por favor, lea cada pregunta cuidadosamente y seleccione la respuesta que considere correcta. Al finalizar, haga clic en el botón "Enviar" para ver sus resultados.</p>
+  <div id="p0">
+    <h3>1) ¿Cuál es el río más largo del mundo?</h3>
+    <label><input type="radio" name="p0" value="1" onclick="respuesta(0, this)"> Amazonas.</label>
+    <label><input type="radio" name="p0" value="2" onclick="respuesta(0, this)"> Nilo.</label>
+    <label><input type="radio" name="p0" value="3" onclick="respuesta(0, this)"> Misisipi.</label>
+  </div>
+  
+  <div id="p1">
+    <h3>2) ¿Qué fenómeno natural se mide con la escala de Richter?</h3>
+    <label><input type="radio" name="p1" value="1" onclick="respuesta(1, this)"> Huracanes.</label>
+    <label><input type="radio" name="p1" value="2" onclick="respuesta(1, this)"> Terremotos.</label>
+    <label><input type="radio" name="p1" value="3" onclick="respuesta(1, this)"> Tornados.</label>
+  </div>
+
+  <div id="p2">
+    <h3>3) ¿En qué continente se encuentra el desierto del Sahara?</h3>
+    <label><input type="radio" name="p2" value="1" onclick="respuesta(2, this)"> Asia.</label>
+    <label><input type="radio" name="p2" value="2" onclick="respuesta(2, this)"> América.</label>
+    <label><input type="radio" name="p2" value="3" onclick="respuesta(2, this)"> África.</label>
+  </div>
+
+  <div id="p3">
+    <h3>4) ¿Cuál es la capital de Australia?</h3>
+    <label><input type="radio" name="p3" value="1" onclick="respuesta(3, this)"> Sídney.</label>
+    <label><input type="radio" name="p3" value="2" onclick="respuesta(3, this)"> Canberra.</label>
+    <label><input type="radio" name="p3" value="3" onclick="respuesta(3, this)"> Melbourne.</label>
+  </div>
+
+  <div id="p4">
+    <h3>5) ¿Qué tipo de clima se caracteriza por tener veranos cálidos y secos e inviernos suaves y húmedos?</h3>
+    <label><input type="radio" name="p4" value="1" onclick="respuesta(4, this)"> Tropical.</label>
+    <label><input type="radio" name="p4" value="2" onclick="respuesta(4, this)"> Mediterráneo.</label>
+    <label><input type="radio" name="p4" value="3" onclick="respuesta(4, this)"> Continental.</label>
+  </div>
+  
+  <button onclick="corregir()">Enviar</button>
+  <p id="resultado"></p>
+</div>
+
+<script src="SCRIPT-GEOGRAFIA.js"></script>
+
+</body>
+</html>

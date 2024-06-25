@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://i.imgur.com/0DQWVvD.png" sizes="16x16" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Quiz-Quimica.css">
+  <title>Quiz - Quimica</title>
+</head>
+<body>
+
+<div id="quiz">
+    <h1>Bienvenido al Quiz de Química</h1>
+    <p class="instructions"> Instrucciones: Por favor, lea cada pregunta cuidadosamente y seleccione la respuesta que considere correcta. Al finalizar, haga clic en el botón "Enviar" para ver sus resultados.</p>
+  <div id="p0">
+    <h3>1) ¿Cuál es el símbolo químico del elemento sodio?</h3>
+    <label><input type="radio" name="p0" value="1" onclick="respuesta(0, this)"> So.</label>
+    <label><input type="radio" name="p0" value="2" onclick="respuesta(0, this)"> Na.</label>
+    <label><input type="radio" name="p0" value="3" onclick="respuesta(0, this)"> S.</label>
+  </div>
+  
+  <div id="p1">
+    <h3>2) ¿Qué tipo de enlace se forma cuando dos átomos comparten electrones?</h3>
+    <label><input type="radio" name="p1" value="1" onclick="respuesta(1, this)"> Iónico.</label>
+    <label><input type="radio" name="p1" value="2" onclick="respuesta(1, this)"> Covalente.</label>
+    <label><input type="radio" name="p1" value="3" onclick="respuesta(1, this)"> Metálico.</label>
+  </div>
+
+  <div id="p2">
+    <h3>3) ¿Cuál es la fórmula química del agua?</h3>
+    <label><input type="radio" name="p2" value="1" onclick="respuesta(2, this)"> H₂O.</label>
+    <label><input type="radio" name="p2" value="2" onclick="respuesta(2, this)"> H₂O₂.</label>
+    <label><input type="radio" name="p2" value="3" onclick="respuesta(2, this)"> HO.</label>
+  </div>
+
+  <div id="p3">
+    <h3>4) ¿Qué es un mol en química?</h3>
+    <label><input type="radio" name="p3" value="1" onclick="respuesta(3, this)"> La unidad de masa atómica.</label>
+    <label><input type="radio" name="p3" value="2" onclick="respuesta(3, this)"> La cantidad de sustancia que contiene tantas entidades elementales como átomos hay en 12 gramos de carbono-12.</label>
+    <label><input type="radio" name="p3" value="3" onclick="respuesta(3, this)"> Una medida de la energía.</label>
+  </div>
+
+  <div id="p4">
+    <h3>5) ¿Cuál es el pH de una solución neutra?</h3>
+    <label><input type="radio" name="p4" value="1" onclick="respuesta(4, this)"> 0.</label>
+    <label><input type="radio" name="p4" value="2" onclick="respuesta(4, this)"> 7.</label>
+    <label><input type="radio" name="p4" value="3" onclick="respuesta(4, this)"> 14.</label>
+
+    <button onclick="corregir()">Enviar</button>
+    <p id="resultado"></p>
+  </div>
+</div>
+<script src="SCRIPT-QUIMICA.js"></script>
+
+</body>
+</html>
