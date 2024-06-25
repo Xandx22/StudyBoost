@@ -39,20 +39,15 @@
             document.getElementById('google-login-btn').addEventListener('click', () => {
                 signInWithPopup(auth, provider)
                     .then((result) => {
-                        // This gives you a Google Access Token. You can use it to access the Google API.
-                        const credential = GoogleAuthProvider.credentialFromResult(result);
-                        const token = credential.accessToken;
-                        // The signed-in user info.
-                        const user = result.user;
-                        alert('Inicio de sesión con Google exitoso');
-                    }).catch((error) => {
-                        // Handle Errors here.
-                        const errorCode = error.code;
-                        const errorMessage = error.message;
-                        const email = error.email;
-                        const credential = GoogleAuthProvider.credentialFromError(error);
-                        alert('Error: ' + errorMessage);
-                    });
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    alert('Inicio de sesión con Google exitoso');
+    // Redirigir a la página deseada
+    window.location.href = "2F-Registro.html";
+});
                     
             });
         });
