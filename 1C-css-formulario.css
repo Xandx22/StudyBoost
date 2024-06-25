@@ -2,23 +2,23 @@ body {
     background-image: url(https://i.imgur.com/m0H0HDK.png);
     background-size: cover;
     background-position: center;
-  }
-  
-  #frases-container {
-    text-align: center; 
-    margin: 20px; 
+}
+
+#frases-container {
+    text-align: center;
+    margin: 20px;
 }
 
 #frase {
-    color: #333; 
+    color: #333;
     font-family: "Playwrite AU VIC", cursive;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-    font-size: 14px; 
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 14px;
 }
 
-  .formulario {
+.formulario {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 5px;
@@ -27,36 +27,35 @@ body {
     max-width: 500px;
     margin-top: 100px;
     text-align: center;
-  }
-  
-  .formulario h1 {
+}
+
+.formulario h1 {
     font-family: "Asap Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 36px;
     margin-bottom: 30px;
-  }
-  
-  .formulario img {
+}
+
+.formulario img {
     width: 300px;
-    height: 300px; 
-    border-radius: 0; 
+    height: 300px;
+    border-radius: 0;
     object-fit: cover;
     margin-bottom: 30px;
-  }
-  
-  
-  .formulario label {
+}
+
+.formulario label {
     display: block;
     font-family: "Asap Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     margin-bottom: 5px;
-  }
-  
-  .formulario input[type="text"],
-  .formulario input[type="password"] {
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
     width: 80%;
     padding: 10px;
     border: 2px solid rgba(0, 0, 0, 0.5);
@@ -67,9 +66,9 @@ body {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-  }
-  
-  .formulario .recordar {
+}
+
+.formulario .recordar {
     font-family: "Asap Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -77,9 +76,9 @@ body {
     color: #666;
     margin-bottom: 20px;
     display: block;
-  }
-  
-  .formulario input[type="submit"] {
+}
+
+.formulario input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -91,14 +90,13 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
 
-  
-  .formulario input[type="submit"]:hover {
+.formulario input[type="submit"]:hover {
     background-color: #3e8e41;
-  }
-  
-  .formulario .registrarse {
+}
+
+.formulario .registrarse {
     font-family: "Asap Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -106,59 +104,82 @@ body {
     color: #4CAF50;
     margin-top: 20px;
     display: block;
-  }
-  
-  .formulario .registrarse a {
+}
+
+.formulario .registrarse a {
     color: #4CAF50;
     text-decoration: none;
     font-family: "Asap Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  @media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 500px) {
     .formulario h1 {
-      font-size: 30px;
+        font-size: 30px;
     }
-  
+
     .formulario input[type="text"],
     .formulario input[type="password"] {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .formulario input[type="submit"] {
-      font-size: 14px;
-    }}
-    
-      .google-login-container {
+        font-size: 14px;
+    }
+}
+
+.google-login-container {
     display: inline-block;
     padding: 10px;
     border: 2px solid rgba(194, 189, 189, 0.5);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(129, 219, 255, 0.3);
     transition: transform 0.2s ease-in-out;
+    margin-bottom: 20px; /* Agrega espacio debajo del contenedor de Google */
 }
 
 .google-login-container img {
-    width: 70px; /* Ajusta el tamaño de la imagen según tu preferencia */
+    width: 70px;
     height: auto;
-    display: block; /* Para asegurarse de que la imagen respete los márgenes del contenedor */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    display: block;
+    margin: 0 auto;
 }
 
 .google-login-container:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el cursor sobre el botón */
+    transform: scale(1.05);
 }
+
 .google-login-container p {
-  font-size: 12px; /* Tamaño de fuente del texto */
-  color: #666; /* Color del texto */
-  margin-bottom: 5px; /* Espacio inferior */
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
 }
 
 .divider {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid rgba(44, 44, 44, 0.315); /* Color y grosor de la línea */
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(44, 44, 44, 0.315);
 }
 
+/* Estilo para el botón de cerrar sesión */
+#google-logout-btn {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto; /* Centra el botón horizontalmente */
+}
+
+#google-logout-btn:hover {
+    background-color: #ff1c1c;
+}
