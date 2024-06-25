@@ -53,6 +53,7 @@
                 signOut(auth).then(() => {
                     alert('Cierre de sesión exitoso');
                     updateSignOutButton();
+                     window.location.href = "Inicio.html";
                 }).catch((error) => {
                     console.error('Error al cerrar sesión:', error);
                 });
