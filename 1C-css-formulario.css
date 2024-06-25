@@ -5,17 +5,17 @@ body {
   }
   
   #frases-container {
-    text-align: center; /* Alinea el contenido al centro */
-    margin: 20px; /* Margen para separación del contenido externo */
+    text-align: center; 
+    margin: 20px; 
 }
 
 #frase {
-    color: #333; /* Color del texto */
+    color: #333; 
     font-family: "Playwrite AU VIC", cursive;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-    font-size: 14px; /* Tamaño de la fuente */
+    font-size: 14px; 
 }
 
   .formulario {
@@ -39,8 +39,8 @@ body {
   
   .formulario img {
     width: 300px;
-    height: 300px; /* Ajusta la altura para que coincida con la anchura */
-    border-radius: 0; /* Utiliza 50% para un círculo perfecto */
+    height: 300px; 
+    border-radius: 0; 
     object-fit: cover;
     margin-bottom: 30px;
   }
@@ -128,5 +128,37 @@ body {
   
     .formulario input[type="submit"] {
       font-size: 14px;
-    }
-  }
+    }}
+    
+      .google-login-container {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid rgba(194, 189, 189, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(129, 219, 255, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.google-login-container img {
+    width: 70px; /* Ajusta el tamaño de la imagen según tu preferencia */
+    height: auto;
+    display: block; /* Para asegurarse de que la imagen respete los márgenes del contenedor */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+.google-login-container:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor sobre el botón */
+}
+.google-login-container p {
+  font-size: 12px; /* Tamaño de fuente del texto */
+  color: #666; /* Color del texto */
+  margin-bottom: 5px; /* Espacio inferior */
+}
+
+.divider {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(44, 44, 44, 0.315); /* Color y grosor de la línea */
+}
+
